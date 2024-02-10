@@ -9,6 +9,7 @@ body {
     text-align: center;
     background-color: #E0CCBE;
     border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Add minimal box shadow */
 }
 
 .navbar ul li{
@@ -17,7 +18,7 @@ body {
     padding: 10px;
     background-color: #747264;
     border-radius: 10px;
-    color: ffffff;
+    color: #ffffff;
 }
 
 .navbar ul{
@@ -40,13 +41,19 @@ a{
     margin-left: auto;
 }
 
-.project_name{
+.project-name{
     margin-left: 10px;
+    font-family: "Bradley Hand", cursive;
 }
 
 .left-side{
     display: grid;
     grid-template-columns: 50% 50%;
+}
+
+.middle{
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .right-side{
@@ -62,4 +69,47 @@ a{
 
 .navbar ul li:hover{
     background-color: #695e59;
+}
+
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+        background-color: #E0CCBE;
+        border-radius: 0 0 10px 10px;
+        height: 15em;
+    }
+
+    .logo {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        margin: auto;
+    }
+    .left-side{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .middle{
+        margin-top: -2px;
+    }
+
+    .right-side{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .contact{
+        padding-bottom: 5px;
+    }
+
+    .navbar ul{
+        padding: 5px
+    }
+    
 }
