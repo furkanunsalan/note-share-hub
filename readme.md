@@ -2,22 +2,22 @@
 These are the inital designs of the project. Might be different from deployment.
 
 ## Home
-![home_img](image.png)
+![home_img](images/designs/image.png)
 
 ## Contents
-![contents_img](image-1.png)
+![contents_img](images/designs/image-1.png)
 
 ## Submission
-![submission_img](image-2.png)
+![submission_img](images/designs/image-2.png)
 
 ## Contact
-![contact_img](image-3.png)
+![contact_img](images/designs/image-3.png)
 
 ## Roadmap
-![roadmap_img](image-4.png)
+![roadmap_img](images/designs/image-4.png)
 
 ## Thanks
-![thanks_img](image-5.png)
+![thanks_img](images/designs/image-5.png)
 
 # Color Palette
 Navbar / Footer Background: `#E0CCBE`  
