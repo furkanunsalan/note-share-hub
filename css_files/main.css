@@ -124,10 +124,15 @@ a {
   background-color: #e0e0e0;
   padding: 20px;
   grid-template-rows: 100px 300px 300px 300px 200px;
-
-  row-gap: 10px;
+  column-gap: 40px;
+  row-gap: 100px;
 }
 
+p {
+  font-size: 30px;
+  text-align:center;
+  letter-spacing: 5px;
+}
 .item {
   background-color: #e0e0e0;
   padding: 15px;
