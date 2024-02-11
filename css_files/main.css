@@ -1,261 +1,279 @@
 body {
-    background-color: #e0e0e0;
-    margin: auto;
-  }
-  
+  background-color: #e0e0e0;
+  margin: auto;
+}
+
+/*NAVBAR START*/
+
+.navbar {
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+  text-align: center;
+  background-color: #e0ccbe;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Add minimal box shadow */
+}
+
+.navbar ul li {
+  text-align: center;
+  display: inline;
+  padding: 10px;
+  background-color: #747264;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.navbar ul {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.project-name {
+  margin-left: 10px;
+  font-family: "Bradley Hand", cursive;
+}
+
+.left-side {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.middle {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.right-side {
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.navbar ul li.active {
+  background-color: #3c3633;
+}
+
+.navbar ul li:hover {
+  background-color: #695e59;
+}
+
+@media screen and (max-width: 600px) {
   .navbar {
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 100%;
     text-align: center;
-    background-color: #E0CCBE;
+    background-color: #e0ccbe;
     border-radius: 0 0 10px 10px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1); /* Add minimal box shadow */
+    height: 15em;
   }
-  
-  .navbar ul li{
-    text-align: center;
-    display: inline;
-    padding: 10px;
-    background-color: #747264;
-    border-radius: 10px;
-    color: #ffffff;
-  }
-  
-  .navbar ul{
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  
-  a{
-    text-decoration: none;
-    color: #ffffff;
-  }
-  
+
   .logo {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     padding: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-right: 0;
-    margin-left: auto;
+    margin: auto;
   }
-  
-  .project-name{
-    margin-left: 10px;
-    font-family: "Bradley Hand", cursive;
-  }
-  
-  .left-side{
+  .left-side {
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 100%;
   }
-  
-  .middle{
-    margin-top: auto;
-    margin-bottom: auto;
+
+  .middle {
+    margin-top: -2px;
   }
-  
-  .right-side{
+
+  .right-side {
     margin-left: auto;
-    margin-right: 10px;
+    margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
   }
-  
-  .navbar ul li.active{
-    background-color: #3C3633;
+
+  .contact {
+    padding-bottom: 5px;
   }
-  
-  .navbar ul li:hover{
-    background-color: #695e59;
+
+  .navbar ul {
+    padding: 5px;
   }
-  
-  
-  @media screen and (max-width: 600px) {
-    .navbar {
-        display: grid;
-        grid-template-columns: 100%;
-        text-align: center;
-        background-color: #E0CCBE;
-        border-radius: 0 0 10px 10px;
-        height: 15em;
-    }
-  
-    .logo {
-        width: 50px;
-        height: 50px;
-        padding: 10px;
-        margin: auto;
-    }
-    .left-side{
-        display: grid;
-        grid-template-columns: 100%;
-    }
-  
-    .middle{
-        margin-top: -2px;
-    }
-  
-    .right-side{
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-    }
-  
-    .contact{
-        padding-bottom: 5px;
-    }
-  
-    .navbar ul{
-        padding: 5px
-    }
-    
-  }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-  }
-  
+}
+
+/*NAVBAR END*/
+
+/*GRID START*/
+
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #e0e0e0;
+  padding: 20px;
+  grid-template-rows: 100px 300px 300px 300px 200px;
+
+  row-gap: 10px;
+}
+
+.item {
+  background-color: #e0e0e0;
+  padding: 15px;
+  color: black;
+  font-size: 25px;
+}
+.item:first-child {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+/*GRID END*/
+
+/*FOOTER START*/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.footer {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 1280px;
+  width: 95%;
+  background: #e0ccbe;
+  border-radius: 6px;
+}
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  padding: 60px;
+}
+
+.footer-row .footer-col h4 {
+  color: black;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer-col .links {
+  margin-top: 20px;
+}
+
+.footer-col .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer-col .links li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-col .links li a:hover {
+  color: #fff;
+}
+
+.footer-col p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footer-col form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer-col input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489c6;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer-col input::placeholder {
+  color: #ccc;
+}
+
+.footer-col form button {
+  background: #ca1f1f;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer-col form button:hover {
+  background: #cecccc;
+}
+
+.footer-col .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer-col .icons i {
+  color: #afb6c7;
+}
+
+.footer-col .icons i:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
   .footer {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 1280px;
-    width: 95%;
-    background: #E0CCBE;
-    border-radius: 6px;
-  }
-  
-  .footer .footer-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 3.5rem;
-    padding: 60px;
-  }
-  
-  .footer-row .footer-col h4 {
-    color: black;
-    font-size: 1.2rem;
-    font-weight: 400;
-  }
-  
-  .footer-col .links {
-    margin-top: 20px;
-  }
-  
-  .footer-col .links li {
-    list-style: none;
-    margin-bottom: 10px;
-  }
-  
-  .footer-col .links li a {
-    text-decoration: none;
-    color: black;
-  }
-  
-  .footer-col .links li a:hover {
-    color: #fff;
-  }
-  
-  .footer-col p {
-    margin: 20px 0;
-    color: #bfbfbf;
-    max-width: 300px;
-  }
-  
-  .footer-col form {
-    display: flex;
-    gap: 5px;
-  }
-  
-  .footer-col input {
-    height: 40px;
-    border-radius: 6px;
-    background: none;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    transform: none;
     width: 100%;
-    outline: none;
-    border: 1px solid #7489C6 ;
-    caret-color: #fff;
-    color: #fff;
-    padding-left: 10px;
-  }
-  
-  .footer-col input::placeholder {
-    color: #ccc;
-  }
-  
-   .footer-col form button {
-    background: #ca1f1f;
-    color: white;
-    outline: none;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: 0.2s ease;
-  }
-  
-  .footer-col form button:hover {
-    background: #cecccc;
-  }
-  
-  .footer-col .icons {
-    display: flex;
-    margin-top: 30px;
-    gap: 30px;
-    cursor: pointer;
-  }
-  
-  .footer-col .icons i {
-    color: #afb6c7;
-  }
-  
-  .footer-col .icons i:hover  {
-    color: #fff;
-  }
-  
-  @media (max-width: 768px) {
-    .footer {
-      position: relative;
-      bottom: 0;
-      left: 0;
-      transform: none;
-      width: 100%;
-      border-radius: 0;
-    }
-  
-    .footer .footer-row {
-      padding: 20px;
-      gap: 1rem;
-    }
-  
-    .footer-col form {
-      display: block;
-    }
-  
-    .footer-col form :where(input, button) {
-      width: 100%;
-    }
-  
-    .footer-col form button {
-      margin: 10px 0 0 0;
-    }
+    border-radius: 0;
   }
 
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
 
+  .footer-col form {
+    display: block;
+  }
 
+  .footer-col form :where(input, button) {
+    width: 100%;
+  }
 
+  .footer-col form button {
+    margin: 10px 0 0 0;
+  }
+}
 
-
-
-  
+/*FOOTER END*/
