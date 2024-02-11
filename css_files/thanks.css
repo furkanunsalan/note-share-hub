@@ -1,0 +1,42 @@
+
+body {
+    margin: 0;
+  }
+
+p {
+    font-size: 35px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align:center;
+    letter-spacing: 5px;
+}
+
+.container {
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1000px;
+    background-color: #E0E0E0;
+    padding:80px;
+    row-gap: 20px;
+    column-gap: 50px;
+}
+.item {
+    background-color:#E0E0E0;
+    padding:180px;
+    color:black;
+    font-size: 20px;
+}
+.item li.active{
+background-color: #3C3633;
+padding:30px
+
+}
+.item li:hover{
+    background-color: #695e59;
+    border-style:solid;
+}
+a {
+    font-weight: 50px;
+    font-size: 30px;
+    color:#E0E0E0
+    
+}
