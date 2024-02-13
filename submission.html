@@ -10,7 +10,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    
   </head>
   <body>
     <nav class="navbar">
@@ -26,7 +25,6 @@
           <li class="active"><a href="submission.html">Submit Content</a></li>
         </ul>
       </div>
-      
 
       <ul class="right-side">
         <li class="contact">
@@ -35,8 +33,94 @@
       </ul>
     </nav>
 
+    <div class="submission-grid">
+      <div class="submission-container">
+        <h1 class="submission-title">Submit Your Content</h1>
+        <p class="submission-text">
+          This page allows you to easily submit your content for study purposes.
+           Whether you're providing text-based responses, uploading PDF 
+           files, or sharing videos, this form streamlines the submission 
+           process. Simply choose the type of content you're submitting, 
+           enter your name and surname, and upload your file. Your 
+           contributions are valuable and will aid in our research efforts. 
+           Thank you for your participation!
+        </p>
+      </div>
+      <img class="submission-img" src="images/submission.png" alt="">
+    </div>
 
-    <p>testing</p>
-    <script src="script.js"></script>
+    <form
+      action="https://formsubmit.co/furkanunsalan@gmail.com"
+      method="POST"
+      id="myForm"
+      enctype="multipart/form-data"
+    >
+      <label for="fname">Name:</label><br />
+      <input type="text" id="fname" name="First Name" /><br />
+      <label for="lname">Surname:</label><br />
+      <input type="text" id="lname" name="Last Name" /><br /><br />
+      <label for="type">Content Type:</label><br />
+      <br />
+      <input
+        type="radio"
+        id="text"
+        name="type"
+        value="text"
+        onclick="showInput('text')"
+      />Text<br />
+      <input
+        type="radio"
+        id="pdf"
+        name="type"
+        value="pdf"
+        onclick="showInput('pdf')"
+      />PDF<br />
+      <input
+        type="radio"
+        id="video"
+        name="type"
+        value="video"
+        onclick="showInput('video')"
+      />Video<br />
+      <div id="fileInput" style="display: none">
+        <label id="fileLabel" for="file">Upload File:</label><br />
+        <input type="file" id="file" name="file" /><br /><br />
+      </div>
+
+      <div id="textTitle" style="display: none">
+        <label for="textInput">Title:</label><br />
+        <input type="text" id="textTitle" name="textTitle"></input>
+      </div>
+
+      <div id="textInput" style="display: none">
+        <label for="textInput">Note:</label><br />
+        <textarea id="textInput" name="textInput" rows="4" cols="50"></textarea
+        ><br /><br />
+      </div>
+      <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+      <input class="submit-button" type="submit" value="Submit" />
+    </form>    
+
+    <script>
+      function showInput(type) {
+        var fileInput = document.getElementById("fileInput");
+        var textTitle = document.getElementById("textTitle");
+        var textInput = document.getElementById("textInput");
+        var fileLabel = document.getElementById("fileLabel");
+        fileInput.style.display = "none"; // Hide file input by default
+        textInput.style.display = "none"; // Hide text input by default
+        textTitle.style.display = "none"; // Hide text input by default
+        if (type === "pdf" || type === "video") {
+          fileInput.style.display = "block";
+          fileLabel.innerHTML =
+            "Upload Your " + type.charAt(0).toUpperCase() + type.slice(1) + ":";
+        } else if (type === "text") {
+          textTitle.style.display = "block"; // Show text input for title
+          textInput.style.display = "block"; // Show text input for text
+        }
+      }
+    </script>
   </body>
 </html>
