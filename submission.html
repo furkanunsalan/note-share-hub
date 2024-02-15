@@ -10,6 +10,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css">
   </head>
   <body>
     <nav class="navbar">
@@ -34,7 +35,7 @@
     </nav>
 
     <div class="submission-grid">
-      <div class="submission-container">
+      <div class="submission-container animate__animated animate__fadeInLeft">
         <h1 class="submission-title">Submit Your Content</h1>
         <p class="submission-text">
           This page allows you to easily submit your content for study purposes.
@@ -46,10 +47,11 @@
            Thank you for your participation!
         </p>
       </div>
-      <img class="submission-img" src="images/submission.png" alt="">
+      <img class="submission-img animate__animated animate__fadeInRight" src="images/submission.png" alt="">
     </div>
 
     <form
+      class="animate__animated animate__fadeInUp"
       action="https://formsubmit.co/furkanunsalan@gmail.com"
       method="POST"
       id="myForm"

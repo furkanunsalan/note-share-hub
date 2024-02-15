@@ -23,6 +23,7 @@ body {
 
 a{
     text-decoration: none;
+    color: #ffffff;
 }
 
 .thanks-button{
@@ -48,6 +49,12 @@ a{
     }
     .thanks-img{
         width: 60%;
+        margin-right: auto;
+    }
+    .thanks-texts{
+        margin: auto;
+        margin-top: 20px;
+        text-align: center;
     }
     
 }
