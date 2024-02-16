@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Share Hub</title>
+    <link rel="stylesheet" href="./css_files/contents.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="left-side">
+        <img
+          class="logo"
+          src="images/placeholder_logo.png"
+          alt="note-share-hub-logo"
+        />
+        <h2 class="project-name">Note Share Hub</h2>
+      </div>
+
+      <div class="middle">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="active"><a href="contents.html">Contents</a></li>
+          <li><a href="submission.html">Submit Content</a></li>
+        </ul>
+      </div>
+
+      <ul class="right-side">
+        <li class="contact">
+          <a href="contact.html"><i class="fa fa-envelope"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <select id="categorySelect" onchange="showDivs()" class="animate__animated animate__fadeInUp">
+      <option value="all">All</option>
+      <option value="category1">Category 1</option>
+      <option value="category2">Category 2</option>
+      <option value="category3">Category 3</option>
+    </select>
+
+    <div class="content-grid animate__animated animate__fadeInUp">
+      <div class="content grid-middle category1">
+        <div class="content-img"></div>
+        <div class="info">
+          <h2>TITLE</h2>
+          <p class="content-sum">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Accusantium eaque veritatis eveniet quam, earum, vel ea porro
+            laborum sed odio quo autem accusamus incidunt nihil magni illo culpa
+            necessitatibus vero.
+          </p>
+          <button class="content-button"><a href="">More</a></button>
+          <div class="content-footer">
+            <p>CONTENT AUTHOR</p>
+            <p>DD/MM/YYYY</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content grid-middle category1">
+        <div class="content-img"></div>
+        <div class="info">
+          <h2>TITLE2</h2>
+          <p class="content-sum">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Accusantium eaque veritatis eveniet quam, earum, vel ea porro
+            laborum sed odio quo autem accusamus incidunt nihil magni illo culpa
+            necessitatibus vero.
+          </p>
+          <button class="content-button"><a href="">More</a></button>
+          <div class="content-footer">
+            <p>CONTENT AUTHOR</p>
+            <p>DD/MM/YYYY</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content grid-middle category2">
+        <div class="content-img"></div>
+        <div class="info">
+          <h2>TITLE3</h2>
+          <p class="content-sum">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Accusantium eaque veritatis eveniet quam, earum, vel ea porro
+            laborum sed odio quo autem accusamus incidunt nihil magni illo culpa
+            necessitatibus vero.
+          </p>
+          <button class="content-button"><a href="">More</a></button>
+          <div class="content-footer">
+            <p>CONTENT AUTHOR</p>
+            <p>DD/MM/YYYY</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content grid-middle category2">
+        <div class="content-img"></div>
+        <div class="info">
+          <h2>TITLE4</h2>
+          <p class="content-sum">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Accusantium eaque veritatis eveniet quam, earum, vel ea porro
+            laborum sed odio quo autem accusamus incidunt nihil magni illo culpa
+            necessitatibus vero.
+          </p>
+          <button class="content-button"><a href="">More</a></button>
+          <div class="content-footer">
+            <p>CONTENT AUTHOR</p>
+            <p>DD/MM/YYYY</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content grid-middle category3">
+        <div class="content-img"></div>
+        <div class="info">
+          <h2>TITLE5</h2>
+          <p class="content-sum">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Accusantium eaque veritatis eveniet quam, earum, vel ea porro
+            laborum sed odio quo autem accusamus incidunt nihil magni illo culpa
+            necessitatibus vero.
+          </p>
+          <button class="content-button"><a href="">More</a></button>
+          <div class="content-footer">
+            <p>CONTENT AUTHOR</p>
+            <p>DD/MM/YYYY</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="content grid-middle category3">
+        <div class="content-img"></div>
+        <div class="info">
+          <h2>TITLE6</h2>
+          <p class="content-sum">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Accusantium eaque veritatis eveniet quam, earum, vel ea porro
+            laborum sed odio quo autem accusamus incidunt nihil magni illo culpa
+            necessitatibus vero.
+          </p>
+          <button class="content-button"><a href="">More</a></button>
+          <div class="content-footer">
+            <p>CONTENT AUTHOR</p>
+            <p>DD/MM/YYYY</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function showDivs() {
+        var category = document.getElementById("categorySelect").value;
+        var divs = document.querySelectorAll(
+          ".category1, .category2, .category3"
+        );
+
+        for (var i = 0; i < divs.length; i++) {
+          var div = divs[i];
+          if (category === "all" || div.classList.contains(category)) {
+            div.style.display = "block";
+          } else {
+            div.style.display = "none";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
