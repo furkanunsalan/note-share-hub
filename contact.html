@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Share Hub</title>
+    <link rel="stylesheet" href="./css_files/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="node_modules/animate.css/animate.min.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="left-side">
+        <img
+          class="logo"
+          src="images/placeholder_logo.png"
+          alt="note-share-hub-logo"
+        />
+        <h2 class="project-name">Note Share Hub</h2>
+      </div>
+
+      <div class="middle">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contents.html">Contents</a></li>
+          <li><a href="submission.html">Submit Content</a></li>
+        </ul>
+      </div>
+
+      <ul class="right-side">
+        <li class="contact active">
+          <a href="contact.html"><i class="fa fa-envelope"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="contact-grid">
+      <img
+        class="contact-img animate__animated animate__fadeInLeft"
+        src="images/contact.png"
+        alt="photo-of-students-asking-question"
+      />
+      <div class="contact-text animate__animated animate__fadeInRight">
+        <h2>Contact Us</h2>
+        <p>
+          For any suggestios, feedbacks or questions please fill out this form
+          below and we will get back to you as soon as possible.
+        </p>
+      </div>
+    </div>
+
+    <form
+      class="animate__animated animate__fadeInUp"
+      action="https://formsubmit.co/furkanunsalan@gmail.com"
+      method="POST"
+      id="myForm"
+      enctype="multipart/form-data"
+    >
+      <label for="fname">Name:</label><br />
+      <input type="text" id="fname" name="First Name" /><br />
+      <label for="lname">Surname:</label><br />
+      <input type="text" id="lname" name="Last Name" /><br /><br />
+      <label for="mail">E-mail:</label><br />
+      <input type="text" id="mail" name="E-mail" /><br />
+      <label for="textInput">Your Message:</label><br />
+      <textarea id="textInput" name="Message" rows="4" cols="50"></textarea>
+      <input
+        type="hidden"
+        name="_next"
+        value="http://127.0.0.1:5500/thanks.html"
+      />
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_template" value="box" />
+      <input class="submit-button" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>

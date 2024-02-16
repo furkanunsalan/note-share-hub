@@ -117,7 +117,7 @@ a {
 /* BODY START */
 
 .submission-container {
-  margin: auto;
+  margin: auto 20px auto auto;
   width: 60%;
 }
 
@@ -141,7 +141,7 @@ a {
 
 .submission-img {
   width: 65%;
-  margin: auto;
+  margin: auto auto auto 20px;
 }
 
 @media screen and (max-width: 600px) {
@@ -157,9 +157,10 @@ a {
 
   .submission-container {
     width: 90%;
+    margin: auto;
   }
 
-  .submission-text{
+  .submission-text {
     margin: auto;
     margin-bottom: 40px;
   }

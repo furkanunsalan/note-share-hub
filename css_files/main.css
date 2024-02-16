@@ -130,7 +130,7 @@ a {
 
 p {
   font-size: 30px;
-  text-align:center;
+  text-align: center;
   letter-spacing: 5px;
 }
 .item {
@@ -147,14 +147,14 @@ p {
 
 /*BODY START*/
 
-.main-grid{
+.main-grid {
   padding-top: 3em;
   padding-bottom: 3em;
   display: grid;
   grid-template-columns: 50% 50%;
 }
 
-.grid-text{
+.grid-text {
   padding: 20px;
   font-size: 20px;
   letter-spacing: 2px;
@@ -163,108 +163,108 @@ p {
   margin-bottom: auto;
 }
 
-.left-text{
+.left-text {
   margin-left: auto;
   margin-right: 50px;
   text-align: right;
 }
 
-.right-text{
+.right-text {
   margin-left: 50px;
   margin-right: auto;
   text-align: left;
 }
 
-.grid-img{
+.grid-img {
   margin: auto;
   width: 35%;
 }
 
-.left-img{
+.left-img {
   margin-right: 50px;
   margin-left: auto;
 }
 
-.right-img{
+.right-img {
   margin-right: auto;
   margin-left: 50px;
 }
 
-@media screen and (max-width: 600px){
-  .main-grid{
+@media screen and (max-width: 600px) {
+  .main-grid {
     display: grid;
     grid-template-columns: 100%;
   }
 
-  .left-text{
+  .left-text {
     margin-right: auto;
     text-align: center;
   }
-  
-  .right-text{
+
+  .right-text {
     margin-left: auto;
     text-align: center;
   }
 
-  .grid-img{
+  .grid-img {
     width: 60%;
   }
 
-  .left-img{
+  .left-img {
     margin-right: auto;
   }
-  
-  .right-img{
+
+  .right-img {
     margin-left: auto;
   }
-
 }
 /*BODY END*/
 
 /*FOOTER START*/
 
-.footer{
+.footer {
   display: grid;
   grid-template-columns: 40% 20% 20% 20%;
-  background-color: #E0CCBE;
+  background-color: #e0ccbe;
   box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.1);
   border-radius: 10px 10px 0 0;
 }
 
-.footer-img{
+.footer-img {
   margin: auto;
-height: 50%;}
+  height: 50%;
+}
 
-.footer-section h3{
+.footer-section h3 {
   text-align: center;
 }
 
-.footer-section ul{
+.footer-section ul {
   list-style-type: none;
   padding: 0;
 }
 
-.footer-section ul li{
+.footer-section ul li {
   list-style-type: none;
   text-align: center;
 }
 
-.footer-section ul li a{
+.footer-section ul li a {
   color: black;
 }
 
-.footer-section ul li a:hover{
+.footer-section ul li a:hover {
   color: #847771;
 }
 
-hr{
+hr {
   border: 1px solid #3c3633;
   width: 40%;
   margin: auto;
 }
 
-@media screen and (max-width: 600px){
-  .footer{
+@media screen and (max-width: 600px) {
+  .footer {
     display: grid;
     grid-template-columns: 100%;
   }
