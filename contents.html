@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Note Share Hub</title>
+    <link rel="icon" href="./images/logo.png">
     <link rel="stylesheet" href="./css_files/contents.css" />
+    <link rel="stylesheet" href="./css_files/navbar.css" />
+    <link rel="stylesheet" href="./css_files/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -15,11 +18,7 @@
   <body>
     <nav class="navbar">
       <div class="left-side">
-        <img
-          class="logo"
-          src="images/placeholder_logo.png"
-          alt="note-share-hub-logo"
-        />
+        <img class="logo" src="images/logo.png" alt="note-share-hub-logo" />
         <h2 class="project-name">Note Share Hub</h2>
       </div>
 
@@ -38,7 +37,11 @@
       </ul>
     </nav>
 
-    <select id="categorySelect" onchange="showDivs()" class="animate__animated animate__fadeInUp">
+    <select
+      id="categorySelect"
+      onchange="showDivs()"
+      class="animate__animated animate__fadeInUp"
+    >
       <option value="all">All</option>
       <option value="category1">Category 1</option>
       <option value="category2">Category 2</option>
@@ -49,14 +52,14 @@
       <div class="content grid-middle category1">
         <div class="content-img"></div>
         <div class="info">
-          <h2>TITLE</h2>
+          <h2>TEXT_TEST</h2>
           <p class="content-sum">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Accusantium eaque veritatis eveniet quam, earum, vel ea porro
             laborum sed odio quo autem accusamus incidunt nihil magni illo culpa
             necessitatibus vero.
           </p>
-          <button class="content-button"><a href="">More</a></button>
+          <button class="content-button"><a href="./contents/templates/text_content.html">More</a></button>
           <div class="content-footer">
             <p>CONTENT AUTHOR</p>
             <p>DD/MM/YYYY</p>
@@ -67,14 +70,14 @@
       <div class="content grid-middle category1">
         <div class="content-img"></div>
         <div class="info">
-          <h2>TITLE2</h2>
+          <h2>PDF_TEST</h2>
           <p class="content-sum">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Accusantium eaque veritatis eveniet quam, earum, vel ea porro
             laborum sed odio quo autem accusamus incidunt nihil magni illo culpa
             necessitatibus vero.
           </p>
-          <button class="content-button"><a href="">More</a></button>
+          <button class="content-button"><a href="./contents/templates/pdf_content.html">More</a></button>
           <div class="content-footer">
             <p>CONTENT AUTHOR</p>
             <p>DD/MM/YYYY</p>
@@ -85,14 +88,14 @@
       <div class="content grid-middle category2">
         <div class="content-img"></div>
         <div class="info">
-          <h2>TITLE3</h2>
+          <h2>VIDEO_TEST</h2>
           <p class="content-sum">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit.
             Accusantium eaque veritatis eveniet quam, earum, vel ea porro
             laborum sed odio quo autem accusamus incidunt nihil magni illo culpa
             necessitatibus vero.
           </p>
-          <button class="content-button"><a href="">More</a></button>
+          <button class="content-button"><a href="./contents/templates/video_content.html">More</a></button>
           <div class="content-footer">
             <p>CONTENT AUTHOR</p>
             <p>DD/MM/YYYY</p>
@@ -154,6 +157,38 @@
         </div>
       </div>
     </div>
+
+    <footer class="footer">
+      <img class="footer-img" src="images/logo.png" alt="" />
+
+      <div class="footer-section">
+        <h3>Pages</h3>
+        <hr />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contents.html">Contents</a></li>
+          <li><a href="submission.html">Submit Content</a></li>
+          <li><a href="roadmap.html">Roadmap</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Team Members</h3>
+        <hr />
+        <ul>
+          <li>
+            <a href="https://github.com/betulblaksea" target="_blank"
+              >Betül Karadeniz</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/furkanunsalan" target="_blank"
+              >Furkan Ünsalan</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <script>
       function showDivs() {

@@ -1,6 +1,13 @@
+html{
+  height: 100vh;
+}
+
 body {
   background-color: #e0e0e0;
   margin: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .thanks-grid {

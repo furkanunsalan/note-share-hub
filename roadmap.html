@@ -5,7 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Note Share Hub</title>
+    <link rel="icon" href="./images/logo.png">
     <link rel="stylesheet" href="./css_files/roadmap.css" />
+    <link rel="stylesheet" href="./css_files/navbar.css" />
+    <link rel="stylesheet" href="./css_files/footer.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -15,11 +18,7 @@
   <body>
     <nav class="navbar">
       <div class="left-side">
-        <img
-          class="logo"
-          src="images/placeholder_logo.png"
-          alt="note-share-hub-logo"
-        />
+        <img class="logo" src="images/logo.png" alt="note-share-hub-logo" />
         <h2 class="project-name">Note Share Hub</h2>
       </div>
 
@@ -38,7 +37,15 @@
       </ul>
     </nav>
 
+    <div class="roadmap_entry animate__animated animate__fadeIn">
+      <h2>Contribution</h2>
+      <p>This is an open source project so if you want to help us out consider checking the link below!</p>
+      <button><a href="https://github.com/furkanunsalan/note-share-hub" target="_blank">Github</a></button>
+    </div>
+
+    
     <div class="animate__animated animate__fadeIn timeline">
+      <hr class="seperator">
       <div class="container left">
         <div class="content">
           <h2>Feb 2024</h2>
@@ -47,59 +54,47 @@
       </div>
       <div class="container right">
         <div class="content">
-          <h2>2016</h2>
+          <h2>Mar 2024</h2>
           <p>
-            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-            admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
-            iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-            primis ea eam.
+            We are planning to add more features to our website and make it more
+            user friendly. A v2.0 is on the way, check out Github issues for more!
           </p>
         </div>
-      </div>
-      <div class="container left">
-        <div class="content">
-          <h2>2015</h2>
-          <p>
-            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-            admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
-            iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-            primis ea eam.
-          </p>
-        </div>
-      </div>
-      <div class="container right">
-        <div class="content">
-          <h2>2012</h2>
-          <p>
-            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-            admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
-            iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-            primis ea eam.
-          </p>
-        </div>
-      </div>
-      <div class="container left">
-        <div class="content">
-          <h2>2011</h2>
-          <p>
-            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-            admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
-            iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-            primis ea eam.
-          </p>
-        </div>
-      </div>
-      <div class="container right">
-        <div class="content">
-          <h2>2007</h2>
-          <p>
-            Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec
-            admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis
-            iuvaret expetendis his, te elit voluptua dignissim per, habeo iusto
-            primis ea eam.
-          </p>
-        </div>
-      </div>
+      </div>  
+      <hr class="seperator">
     </div>
+    
+
+    <footer class="footer">
+      <img class="footer-img" src="images/logo.png" alt="" />
+
+      <div class="footer-section">
+        <h3>Pages</h3>
+        <hr />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contents.html">Contents</a></li>
+          <li><a href="submission.html">Submit Content</a></li>
+          <li><a href="roadmap.html">Roadmap</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h3>Team Members</h3>
+        <hr />
+        <ul>
+          <li>
+            <a href="https://github.com/betulblaksea" target="_blank"
+              >Betül Karadeniz</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/furkanunsalan" target="_blank"
+              >Furkan Ünsalan</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
